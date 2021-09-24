@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Staatliches', cursive;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(bilder/background.jpg);
+    background-blend-mode: multiply;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+/** HEADER **/
+
+.main-header {
+    background-color: rgba(37, 36, 34);
+}
+
+.nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    flex-grow: 1;
+}
+
+.main-nav a {
+    color: #CCC5B9;
+}
+
+.nav img {
+    height: 30px;
+}
+
+.nav li {
+    text-decoration: none;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .9em;
+    font-size: 1.5em;
+}
+
+/** MAIN CONTENT **/
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.main-item {
+    margin: 5%;
+    padding: 0 1em;
+}
+
+.main-item1 {
+    width: 590px;
+}
+
+span {
+    font-size: 3.6em;
+    color: seashell;
+}
+
+/** FOOTER **/
+
+.main-footer {
+    background-color: rgba(64, 61, 57);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-top: auto;
+}
+
+.footer-nav li {
+    padding: 0 2.5%;
+}
+
+.footer-nav img {
+    height: 30px;
+    width: 30px;
+}
+
+/** MEDIA-INQUIRIES **/
+
+@media screen and (max-width: 480px) {
+    body {
+      font-size: .9em;
+    }
+
+    .form-floating {
+        width: 440%;;
+    }
+  }
+
+/** REGISTER **/
+
+.form-floating {
+    width: 650%;
+    opacity: 90%;
+}
+
+.container {
+    justify-content: left;
+    padding-top: .5em;
+}
+
+
